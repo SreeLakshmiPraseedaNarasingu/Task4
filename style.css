@@ -1,0 +1,113 @@
+/* Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #1a3e16, #2f8d22);
+
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Container with glass feel */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e0ffe5;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.input-section input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a5d6a7;
+  font-size: 1rem;
+  background: #f0fff3;
+  color: #2e7d32;
+}
+
+/* Glassmorphism button */
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #aed581;
+}
+
+/* Completed task style */
+li.completed {
+  text-decoration: line-through;
+  background-color: #c5e1a5;
+  color: #33691e;
+}
+
+/* Layout for task items */
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Task action buttons */
+.task-actions button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add glass style to actions */
+.task-actions button {
+  composes: glass-button;
+}
+
+.edit-btn { background: rgba(105, 195, 63, 0.3); color: #fff; }
+.complete-btn { background: rgba(60, 180, 75, 0.3); color: #fff; }
+.delete-btn { background: rgba(170, 240, 30, 0.3); color: #fff; }
